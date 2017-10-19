@@ -1,0 +1,36 @@
+#background {
+  background-image: url("homebg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+#background header {
+  padding: 3rem 0;
+}
+#background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+#background header nav {
+  float: right;
+}
+#background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+#background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+}
+#background header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.tagline {
+	padding: 2.5rem;
+	}
