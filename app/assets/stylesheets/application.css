@@ -1,5 +1,6 @@
 @import 'welcome.css';
 @import 'normalize.css';
+@import 'podcasts.css';
 
 body {
 	font-family: 'Merriweather', sans-serif;
@@ -125,15 +126,15 @@ h1 {
 }
 
 .podcasts_banner {
-	background-image: url(../images/podcasts-banner.jpg);
+	background-image: url("podcasts-banner.jpg");
 }
 
 .sign_in_banner {
-	background-image: url(../images/sign-in-banner.jpg);
+	background-image: url("sign-in-banner.jpg");
 }
 
 .sign_up_banner {
-	background-image: url(../images/sign-up-banner.jpg);
+	background-image: url("sign-up-banner.jpg");
 }
 
 .pagination:before, .pagination:after {

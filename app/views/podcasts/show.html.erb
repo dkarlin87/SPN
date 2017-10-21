@@ -1,0 +1,92 @@
+<div id="podcast-show">
+<div id="show_banner">
+	<div class="wrapper_skinny">
+	<h1><%= @podcast.title %></h1>
+	<p class="description"><%= @podcast.description %></p>
+	<% unless @podcast.itunes.blank? %>
+	<a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+	<% end %>
+	<% unless @podcast.stitcher.blank? %>
+	<a href="<%= @podcast.stitcher %>" class="subscribe_link">Sticher</a>
+	<% end %>
+	<% unless @podcast.podbay.blank? %>
+	<a href="<%= @podcast.podbay %>" class="subscribe_link">Podbay</a>
+	<% end %>		
+	
+	</div>
+
+</div>
+
+<div id="breadcrumb">
+	<a href="#">
+		All Podcasts
+		<span></span>
+		Sool Radio
+	</a>
+</div>
+<div id="episodes">
+	<div class="wrapper_skinny">
+		<ul class="cf">
+			
+			<li class="cf">
+			<div class="episode_thumbnail">
+				<a href="episode.html"><img src="images/soolradio.jpg" alt="episode_name"></a>
+			</div>
+			<div class="episode_overview">
+				<a href="#"><h2>"Stumbling in" (w/ Christian Hand)</h2></a>
+					<p class="description">Dan stumbles into the world of podcasting. DJ and producer Christian Hand is interviewed. Wish them both luck.</p>
+			</div>
+			</li>
+
+			<li class="cf">
+			<div class="episode_thumbnail">
+				<a href="episode.html"><img src="images/soolradio.jpg" alt="episode_name"></a>
+			</div>
+			<div class="episode_overview">
+				<a href="#"><h2>"Stumbling in" (w/ Christian Hand)</h2></a>
+					<p class="description">Dan stumbles into the world of podcasting. DJ and producer Christian Hand is interviewed. Wish them both luck.</p>
+			</div>
+			</li>
+
+			<li class="cf">
+			<div class="episode_thumbnail">
+				<a href="episode.html"><img src="images/soolradio.jpg" alt="episode_name"></a>
+			</div>
+			<div class="episode_overview">
+				<a href="#"><h2>"Stumbling in" (w/ Christian Hand)</h2></a>
+					<p class="description">Dan stumbles into the world of podcasting. DJ and producer Christian Hand is interviewed. Wish them both luck.</p>
+			</div>
+			</li>
+
+			<li class="cf">
+			<div class="episode_thumbnail">
+				<a href="episode.html"><img src="images/soolradio.jpg" alt="episode_name"></a>
+			</div>
+			<div class="episode_overview">
+				<a href="#"><h2>"Stumbling in" (w/ Christian Hand)</h2></a>
+					<p class="description">Dan stumbles into the world of podcasting. DJ and producer Christian Hand is interviewed. Wish them both luck.</p>
+			</div>
+			</li>
+
+			<li class="cf">
+			<div class="episode_thumbnail">
+				<a href="episode.html"><img src="images/soolradio.jpg" alt="episode_name"></a>
+			</div>
+			<div class="episode_overview">
+				<a href="#"><h2>"Stumbling in" (w/ Christian Hand)</h2></a>
+					<p class="description">Dan stumbles into the world of podcasting. DJ and producer Christian Hand is interviewed. Wish them both luck.</p>
+			</div>
+			</li>
+
+		</ul>
+
+	</div>
+</div>
+
+
+<div class="pagination">
+	<span class="previous_page disabled">Previous</span>
+<em class="current">1</em>
+<a href="#">2</a>
+<a class="next_page" href="#">Next</a>
+</div>
