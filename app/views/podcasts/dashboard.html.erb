@@ -26,7 +26,7 @@
 			
 			<li class="cf">
 			<div class="episode_thumbnail">
-				<a href="episode.html"><img src="images/soolradio.jpg" alt="episode_name"></a>
+				<%= image_tag episode.thumbnail.url(:medium) %>
 			</div>
 			<div class="episode_overview">
 				<h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
