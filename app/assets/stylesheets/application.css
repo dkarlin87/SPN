@@ -197,6 +197,7 @@ input[type="email"], input[type="text"], input[type="password"], textarea {
 
 textarea {
 	min-height: .8rem;
+	height: 6rem !important;
 	margin-top: .5rem !important;
 }
 

@@ -20,7 +20,7 @@
 <div id="breadcrumb">
 	<a href="#">
 		All Podcasts
-		<span></span>
+		<span>//</span>
 		Sool Radio
 	</a>
 </div>
@@ -43,26 +43,11 @@
 	</div>
 </div>
 
+				<%= will_paginate @episodes %>
 
-<div class="pagination">
-	<span class="previous_page disabled">Previous</span>
-<em class="current">1</em>
-<a href="#">2</a>
-<a class="next_page" href="#">Next</a>
-</div>
 <div class="wrapper_skinny">
-<div id="disqus_thread"></div>
+<div id="disqus_thread">
 <script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://spn-1.disqus.com/embed.js';
@@ -71,4 +56,5 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
- </div>
+</div>
+</div>

@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.3'
 gem 'paperclip', '~> 5.1'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 # gem 'bcrypt', '~> 3.1.7'
 
 # gem 'unicorn'
