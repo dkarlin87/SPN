@@ -78,15 +78,4 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   
-  # sets paperclip to Upload to Amazon S3 by Default
-      config.paperclip_defaults = {
-      storage: :s3,
-      s3_credentials: {
-        bucket: ENV.fetch('spn-online'),
-        access_key_id: ENV.fetch('AKIAI3SRPDEV3BX6TEIQ'),
-        secret_access_key: ENV.fetch('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'),
-        s3_region: ENV.fetch('AWS_REGION'),
-      }
-    }
-  
 end
