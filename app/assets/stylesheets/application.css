@@ -29,6 +29,21 @@ body {
 	clear: both;
 }
 
+
+#notice_wrapper {
+	width: 100%;
+	position: absolute;
+	background: white;
+	z-index: 999;
+}
+
+#notice_wrapper p {
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.25rem;
+	padding: 1.5rem 0;
+}
+
 .button{
 	color: white;
 	text-decoration: none;
