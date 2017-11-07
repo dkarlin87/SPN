@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'charges/new'
+
+  get 'charges/create'
+
   devise_for :podcasts
 
 resources :podcasts, only: [:index, :show] do
@@ -14,3 +18,4 @@ root 'welcome#index'
 
 
 end
+

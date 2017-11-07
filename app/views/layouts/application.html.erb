@@ -4,6 +4,7 @@
   <title>Workspace</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <%= tag :meta, :name=> 'stripe-key', :content => Rails.configuration.stripe[:publishable_key] %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -30,7 +31,7 @@
 			$('#notice_wrapper').fadeOut("slow", function() {
 				$this.remove();
 			});
-		}, 4500 );
+		}, 1500 );
 	});
 </script>
 
