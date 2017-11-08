@@ -1,4 +1,4 @@
-<%= tag :meta, :name=> 'stripe-key', :content => ENV["pk_live_31rTr5p4WiTXANAoPaTBtBUL"] %>
+<%= tag :meta, :name=> 'stripe-key', :content => ENV["STRIPE_PUBLIC_KEY"] %>
 <div id="banner" class="sign_up_banner">
 <h1>Create a podcast. It's 100% free.</h1>
 </div>
@@ -38,24 +38,27 @@
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
     
-      <%= form_tag charges_new_path do %>
-        <article>
-          <% if flash[:error].present? %>
-            <div id="error_explanation">
-              <p><%= flash[:error] %></p>
-            </div>
-          <% end %>
-          <label class="amount">
-            <span>Amount: $99</span>
-          </label>
-        </article>
-      
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="A year's subscription"
-                data-amount="9900"
-                data-locale="auto"></script>
-      <% end %>
+<%= form_tag charges_new_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Amount: $99/year <%= (@amount) %></span>
+    </label>
+  </article>
+
+  <%= hidden_field_tag :subscription, value: params[:subscription] %>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="<%= @description %>"
+          data-amount="<%= @amount %>"
+          data-bitcoin="true"
+          data-locale="auto"></script>
+<% end %>
     
       <div class="actions">
         <%= f.submit "Sign up", class: "button button_highlight button_block" %>
